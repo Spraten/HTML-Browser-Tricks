@@ -2,11 +2,11 @@
 A list of tips / tricks / scripts for html or web based stuff for my personal use
 
 
-Extract-Text-From-Protected-HTML
+#Extract-Text-From-Protected-HTML
 Short Java Script to extract Text in HTML and output to console and Clipboard inspect webpage > console > run command > will copy the webpages "main content" prints it to the terminal and also copies it directly to your clipboard for convince
 
 NOTE: "Main-Conent" may need to be chagned for some sites
-
+```
 let content = Array.from(document.querySelectorAll('.main-content'))
                    .map(el => el.innerText)
                    .join('\n============================\n') + '\n============================\n';
@@ -25,7 +25,7 @@ try {
     console.log('Oops, unable to copy');
 }
 document.body.removeChild(textarea);
-
+```
 
 
 # Sonic-Playabck
